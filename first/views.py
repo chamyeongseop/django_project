@@ -3,10 +3,8 @@ from django.http import HttpResponse
 
 from django.template import loader
 from datetime import datetime
-
 import random
-
-
+import random
 # Create your views here.
 def index(request):
     now = datetime.now()

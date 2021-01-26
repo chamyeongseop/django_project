@@ -1,7 +1,7 @@
 {% extends 'first/base.html' %}
 {% block content %}
 <p>수를 하나 입력해주세요.</p>
-
+<!--Django Template: Rendering 작업을 할 때, {% 내용  %}을 사용한다-->
 <form action="{% url 'result' %}" method="get">
     <input type="number" name="number"/>
     <button type="submit">결과보기</button>

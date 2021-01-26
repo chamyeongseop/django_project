@@ -7,13 +7,14 @@ import random
 
 # Create your views here.
 def index(request):
+    template = loader.get_template('index.html')
     now = datetime.now()
     context = {
         'current_date': now
     }
     # rendering
     # render method
-    return render(request, 'first/index.html', context)
+    return HttpResponse(template.render(context, request))
 
 
 def select(request):

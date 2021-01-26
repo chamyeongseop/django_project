@@ -7,6 +7,7 @@
 
     <p>{{ current_date }}</p>
     <p>{{ current_date|date:"Y년 m월 d일 H시 i분 s초" }}</p>
-
+<!--    Django에서 권장 : /first/urls.py에서 'select' 확인 가능-->
+<!--하드 코딩 방지 및 유지 보수에 장점이 있음-->
     <a href="{% url 'select' %}">시작하기!</a>
 {% endblock %}

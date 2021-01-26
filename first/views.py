@@ -14,7 +14,7 @@ def index(request):
     }
     # rendering
     # render method
-    return HttpResponse(template.render(context, request))
+    return render(request, 'index.html', context)
 
 
 def select(request):
